@@ -4668,6 +4668,16 @@
 
     @media (max-width: 810px) {
 
+      /* HIDE SPECIFIC BUTTONS ON MOBILE */
+      .framer-8u5a6p,
+      /* Nav Button */
+      .framer-119jpu
+
+      /* Hero Secondary Button (Learn More) */
+        {
+        display: none !important;
+      }
+
       /* Force all fixed-width containers to 100% */
       [style*="width: 390px"],
       .framer-72rtr7,
@@ -4681,7 +4691,8 @@
       /* NAVIGATION REDESIGN */
       .framer-maxr99 {
         padding: 12px 16px !important;
-        justify-content: space-between !important;
+        justify-content: center !important;
+        /* Center the logo when button is gone */
         width: 100% !important;
       }
 
@@ -4689,19 +4700,8 @@
         font-size: 18px !important;
       }
 
-      /* Nav Button */
-      .framer-8u5a6p {
-        padding: 8px 16px !important;
-        min-width: unset !important;
-      }
-
-      .framer-8u5a6p .framer-text {
-        font-size: 14px !important;
-      }
-
       /* BUTTONS GLOBAL REDESIGN */
       .framer-aOQEa,
-      .framer-8u5a6p,
       .framer-1umrooh,
       .framer-13boibf {
         width: 100% !important;
