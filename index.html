@@ -4653,27 +4653,49 @@
       color-scheme: unset !important
     }
 
-    /* HERO TESTIMONIAL MARQUEE ANIMATION */
-    .framer-12j0t1n-container section ul {
-      width: max-content !important;
-      animation: hero-marquee 12s linear infinite !important;
-      display: flex !important;
-      flex-direction: row !important;
-      will-change: transform !important;
+    /* REBUILT HERO TESTIMONIAL MARQUEE */
+    .framer-12j0t1n-container {
+      width: 100% !important;
+      overflow: hidden !important;
+      padding: 40px 0 !important;
+      mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent) !important;
+      -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent) !important;
     }
 
-    @keyframes hero-marquee {
+    .framer-12j0t1n-container section {
+      width: 100% !important;
+      overflow: hidden !important;
+    }
+
+    .framer-12j0t1n-container ul {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: nowrap !important;
+      width: max-content !important;
+      animation: hero-marquee-scroll 15s linear infinite !important;
+      gap: 20px !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      list-style: none !important;
+    }
+
+    .framer-12j0t1n-container li {
+      flex-shrink: 0 !important;
+      width: 320px !important;
+      /* Fixed width for consistency */
+    }
+
+    @keyframes hero-marquee-scroll {
       0% {
         transform: translateX(0);
       }
 
       100% {
-        transform: translateX(-33.3333%);
+        transform: translateX(calc(-320px * 4 - 20px * 4));
       }
     }
 
-    /* Pause on hover for accessibility and UX */
-    .framer-12j0t1n-container section ul:hover {
+    .framer-12j0t1n-container ul:hover {
       animation-play-state: paused !important;
     }
 
@@ -5044,7 +5066,6 @@
       }
     }
   </style>
-  <!-- Cal.com embed snippet -->
   <script type="text/javascript">
     (function (C, A, L) {
       let p = function (a, ar) { a.q.push(ar); };
