@@ -4948,6 +4948,68 @@
         gap: 16px !important;
       }
 
+      /* CAL.COM EMBED FIXES */
+      .framer-10my6om-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 800px !important;
+        /* Increased for mobile booking flow */
+        position: relative !important;
+        pointer-events: auto !important;
+        z-index: 10 !important;
+      }
+
+      .cal-inline-container {
+        width: 100% !important;
+        height: 100% !important;
+        overflow: visible !important;
+        /* Avoid capturing scroll on mobile */
+        pointer-events: auto !important;
+        z-index: 11 !important;
+      }
+
+      cal-inline,
+      .cal-embed {
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 700px !important;
+        display: block !important;
+        pointer-events: auto !important;
+        z-index: 12 !important;
+      }
+
+      /* MOBILE BOOKING BUTTON */
+      .mobile-book-button {
+        display: none !important;
+        background-color: var(--token-8454ef88-b6ee-4ed5-be6e-f2c4387e5309, rgb(54, 94, 255));
+        color: white !important;
+        padding: 20px 32px !important;
+        border-radius: 12px !important;
+        font-weight: 600 !important;
+        text-decoration: none !important;
+        font-size: 18px !important;
+        width: 100% !important;
+        text-align: center !important;
+        margin-top: 24px !important;
+        box-shadow: 0 10px 20px rgba(54, 94, 255, 0.2) !important;
+      }
+
+      @media (max-width: 810px) {
+        .mobile-book-button {
+          display: block !important;
+        }
+
+        .cal-inline-container {
+          display: none !important;
+        }
+
+        .framer-10my6om-container {
+          height: auto !important;
+          min-height: unset !important;
+          padding: 20px 0 !important;
+        }
+      }
+
       /* Prevent horizontal scroll */
       html,
       body {
@@ -5956,6 +6018,8 @@
                       Book a free discovery call with us</p>
                   </div>
                   <div class="framer-10my6om-container"><!--$--><!--/$-->
+                    <a href="https://cal.com/tryventra/discoverycall" target="_blank" class="mobile-book-button">Book a
+                      Call</a>
                     <div style="width: 100%; height: 100%; overflow: scroll;" class="cal-inline-container"><cal-inline
                         data-theme="auto" data-layout="month_view"
                         style="max-height:inherit;height:inherit;min-height:inherit;display:flex;position:relative;flex-wrap:wrap;width:100%"
