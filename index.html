@@ -4692,11 +4692,44 @@
         max-width: 100% !important;
       }
 
+      /* STANDARDIZED SIDE PADDING (20px) FOR ALL SECTIONS */
+      .framer-1b9dc7e,
+      /* Hero Section */
+      .framer-1kupaaz,
+      /* Process Section */
+      .framer-1xh845d,
+      /* Clients Section */
+      .framer-1gbobfk,
+      /* Recruiters/CTA Section */
+      .framer-Ws0ww
+
+      /* Footer Section */
+        {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        width: 100% !important;
+      }
+
+      /* STANDARDIZED CONTENT CONTAINERS */
+      .framer-4tjkxz,
+      /* Hero Container */
+      .framer-ig21nf,
+      /* Footer Container */
+      .framer-1foswd5
+
+      /* Cards Container */
+        {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        box-sizing: border-box !important;
+      }
+
       /* NAVIGATION REDESIGN */
       .framer-maxr99 {
-        padding: 12px 16px !important;
+        padding: 12px 20px !important;
         justify-content: center !important;
-        /* Center the logo when button is gone */
         width: 100% !important;
       }
 
@@ -4733,18 +4766,14 @@
 
       /* FOOTER REDESIGN */
       .framer-ig21nf {
-        padding: 60px 0 40px !important;
-        /* Removed side padding to let width: 100% work */
+        padding: 60px 20px 40px !important;
         display: flex !important;
         flex-direction: column !important;
         gap: 48px !important;
         align-items: center !important;
         text-align: center !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        border-left: none !important;
-        /* Remove the distracting dashed lines on mobile */
-        border-right: none !important;
+        border-left: 1px dashed rgba(255, 255, 255, 0.1) !important;
+        border-right: 1px dashed rgba(255, 255, 255, 0.1) !important;
       }
 
       .framer-dfo6qm {
@@ -4763,9 +4792,6 @@
         align-items: center !important;
         gap: 24px !important;
         width: 100% !important;
-        /* MUST BE 100% to fix vertical text */
-        max-width: 90% !important;
-        /* Allow more width */
       }
 
       .logo-text {
@@ -4840,8 +4866,6 @@
         margin-top: 32px !important;
         border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
         padding: 32px 20px 0 !important;
-        width: 100% !important;
-        max-width: 90% !important;
         display: flex !important;
         justify-content: center !important;
       }
