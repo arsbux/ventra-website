@@ -4653,6 +4653,30 @@
       color-scheme: unset !important
     }
 
+    /* HERO TESTIMONIAL MARQUEE ANIMATION */
+    .framer-12j0t1n-container section ul {
+      width: max-content !important;
+      animation: hero-marquee 60s linear infinite !important;
+      display: flex !important;
+      flex-direction: row !important;
+      will-change: transform !important;
+    }
+
+    @keyframes hero-marquee {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-33.3333%);
+      }
+    }
+
+    /* Pause on hover for accessibility and UX */
+    .framer-12j0t1n-container section ul:hover {
+      animation-play-state: paused !important;
+    }
+
     /* CUSTOM RESPONSIVENESS OVERRIDES */
     @media (max-width: 1210px) {
 
@@ -5116,7 +5140,7 @@
                   </div>
                 </a><!--/$-->
               </div>
-              <div class="framer-12j0t1n-container hidden-su96bp hidden-we3r19" data-framer-appear-id="12j0t1n"
+              <div class="framer-12j0t1n-container" data-framer-appear-id="12j0t1n"
                 style="opacity: 1; transform: none; will-change: transform;"><!--$-->
                 <section
                   style="display: flex; width: 100%; height: 100%; max-width: 100%; max-height: 100%; place-items: center; margin: 0px; padding: 0px; list-style-type: none; opacity: 1; mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%); overflow: hidden;">
