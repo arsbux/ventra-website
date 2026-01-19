@@ -4717,25 +4717,22 @@
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
-      padding: 0 24px !important;
+      padding: 0 32px !important;
       height: 48px !important;
       width: fit-content !important;
-      min-width: 140px !important;
+      min-width: unset !important;
       text-decoration: none !important;
       transition: all 0.2s ease-in-out !important;
     }
 
-    /* Fix for button inner text centering and positioning */
-    .framer-8u5a6p>div,
-    .framer-aOQEa>div,
-    .framer-119jpu>div,
-    .framer-8u5a6p p,
-    .framer-aOQEa p,
-    .framer-119jpu p {
+    /* Force all nested elements to center the text perfectly */
+    .framer-8u5a6p *,
+    .framer-aOQEa *,
+    .framer-119jpu * {
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
-      width: auto !important;
+      width: 100% !important;
       margin: 0 !important;
       padding: 0 !important;
       text-align: center !important;
@@ -4747,11 +4744,13 @@
       margin-left: auto !important;
     }
 
-    /* Ensure specific hero layout doesn't break buttons */
+    /* Ensure specific hero layout aligns buttons properly */
     .framer-1wypiug {
       display: flex !important;
+      flex-direction: row !important;
       gap: 16px !important;
       width: fit-content !important;
+      justify-content: flex-start !important;
     }
 
     /* CUSTOM RESPONSIVENESS OVERRIDES */
