@@ -4808,15 +4808,23 @@
       flex: none !important;
       max-width: 400px !important;
       gap: 12px !important;
-      /* Tighter gap between logo and subtext */
+      justify-content: flex-start !important;
+    }
+
+    .branding-column>* {
+      width: 100% !important;
+      display: flex !important;
+      justify-content: flex-start !important;
+      align-items: flex-start !important;
     }
 
     .logo-text {
       text-align: left !important;
+      justify-content: flex-start !important;
       --framer-font-size: 48px !important;
-      /* Smaller logo in footer */
-      line-height: 1 !important;
-      margin-bottom: 4px !important;
+      line-height: 1.1 !important;
+      margin: 0 !important;
+      padding: 0 !important;
     }
 
     .logo-text a {
