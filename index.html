@@ -4729,20 +4729,27 @@
 
       /* FOOTER REDESIGN */
       .framer-ig21nf {
-        padding: 60px 20px 40px !important;
+        padding: 60px 0 40px !important;
+        /* Removed side padding to let width: 100% work */
         display: flex !important;
         flex-direction: column !important;
         gap: 48px !important;
         align-items: center !important;
         text-align: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        border-left: none !important;
+        /* Remove the distracting dashed lines on mobile */
+        border-right: none !important;
       }
 
       .framer-dfo6qm {
         display: flex !important;
         flex-direction: column !important;
-        gap: 48px !important;
+        gap: 56px !important;
         align-items: center !important;
         width: 100% !important;
+        max-width: 100% !important;
       }
 
       /* Footer Branding (Logo + Bio) */
@@ -4750,30 +4757,41 @@
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        gap: 20px !important;
-        max-width: 320px !important;
+        gap: 24px !important;
+        width: 100% !important;
+        /* MUST BE 100% to fix vertical text */
+        max-width: 90% !important;
+        /* Allow more width */
       }
 
       .logo-text {
-        font-size: 56px !important;
+        font-size: 64px !important;
         line-height: 1 !important;
         margin-bottom: 8px !important;
+        width: 100% !important;
+      }
+
+      .framer-1g0nku6 {
+        width: 100% !important;
+        max-width: 100% !important;
       }
 
       .framer-1g0nku6 .framer-text {
-        font-size: 16px !important;
-        line-height: 1.5 !important;
-        color: rgba(255, 255, 255, 0.6) !important;
+        font-size: 17px !important;
+        line-height: 1.6 !important;
+        color: rgba(255, 255, 255, 0.7) !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        white-space: normal !important;
       }
 
       /* Footer Links Organization */
       .footer-links-container {
-        display: grid !important;
-        grid-template-columns: 1fr 1fr !important;
+        display: flex !important;
+        flex-direction: column !important;
         gap: 40px !important;
         width: 100% !important;
-        max-width: 400px !important;
-        justify-items: center !important;
+        align-items: center !important;
       }
 
       .footer-link-group {
@@ -4781,6 +4799,7 @@
         flex-direction: column !important;
         gap: 16px !important;
         align-items: center !important;
+        width: 100% !important;
       }
 
       .footer-group-title {
@@ -4788,29 +4807,44 @@
         font-size: 14px !important;
         font-weight: 700 !important;
         text-transform: uppercase !important;
-        letter-spacing: 0.1em !important;
+        letter-spacing: 0.15em !important;
         margin: 0 !important;
-        opacity: 0.5 !important;
+        opacity: 0.4 !important;
       }
 
       .framer-6kxtxp,
       .framer-jspe5z {
         display: flex !important;
         flex-direction: column !important;
-        gap: 12px !important;
+        gap: 14px !important;
         align-items: center !important;
+        width: 100% !important;
+      }
+
+      .framer-aOQEa .framer-text {
+        font-size: 16px !important;
+        font-weight: 500 !important;
       }
 
       /* Footer bottom bar */
       .framer-sw3eiv {
+        width: 100% !important;
         padding-bottom: 60px !important;
       }
 
       .framer-1ofrntu {
-        margin-top: 24px !important;
+        margin-top: 32px !important;
         border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
-        padding-top: 24px !important;
+        padding: 32px 20px 0 !important;
         width: 100% !important;
+        max-width: 90% !important;
+        display: flex !important;
+        justify-content: center !important;
+      }
+
+      .framer-14vsyj5 .framer-text {
+        font-size: 14px !important;
+        opacity: 0.5 !important;
       }
 
       /* Process Section Grid Fix - FORCE STACKING */
