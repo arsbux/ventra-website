@@ -4787,22 +4787,57 @@
     .framer-ig21nf {
       align-items: flex-start !important;
       padding-left: 40px !important;
-      /* Keep the consistent side padding */
+      padding-right: 40px !important;
     }
 
     .framer-dfo6qm {
       width: 100% !important;
       max-width: 1200px !important;
+      display: flex !important;
+      flex-direction: row !important;
       justify-content: space-between !important;
+      align-items: flex-start !important;
     }
 
     .branding-column {
+      display: flex !important;
+      flex-direction: column !important;
       align-items: flex-start !important;
       text-align: left !important;
+      width: auto !important;
+      flex: none !important;
+      max-width: 400px !important;
+      gap: 12px !important;
+      /* Tighter gap between logo and subtext */
     }
 
     .logo-text {
       text-align: left !important;
+      --framer-font-size: 48px !important;
+      /* Smaller logo in footer */
+      line-height: 1 !important;
+      margin-bottom: 4px !important;
+    }
+
+    .logo-text a {
+      font-size: 48px !important;
+      text-align: left !important;
+    }
+
+    .branding-column p {
+      font-size: 16px !important;
+      line-height: 1.5 !important;
+      color: rgba(255, 255, 255, 0.7) !important;
+      margin: 0 !important;
+      text-align: left !important;
+    }
+
+    .footer-links-container {
+      display: flex !important;
+      flex-direction: row !important;
+      gap: 40px !important;
+      align-items: flex-start !important;
+      flex: none !important;
     }
 
     /* CUSTOM RESPONSIVENESS OVERRIDES */
