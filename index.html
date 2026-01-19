@@ -4656,7 +4656,7 @@
     /* HERO TESTIMONIAL MARQUEE ANIMATION */
     .framer-12j0t1n-container section ul {
       width: max-content !important;
-      animation: hero-marquee 30s linear infinite !important;
+      animation: hero-marquee 12s linear infinite !important;
       display: flex !important;
       flex-direction: row !important;
       will-change: transform !important;
@@ -5044,6 +5044,22 @@
       }
     }
   </style>
+  <!-- Cal.com embed snippet -->
+  <script type="text/javascript">
+    (function (C, A, L) {
+      let p = function (a, ar) { a.q.push(ar); };
+      let d = C.document; C.Cal = C.Cal || function () {
+        let a = arguments; if (!a.length) return;
+        let r = a[0];
+        if (!C.Cal.q) C.Cal.q = [];
+        if (r === "init") {
+          let s = d.createElement("script");
+          s.src = A; d.head.appendChild(s); C.Cal.init = function () { p(C.Cal, arguments); };
+        } else p(C.Cal, arguments);
+      };
+    })(window, "https://app.cal.com/embed/embed.js", "Cal");
+    Cal("init", { origin: "https://app.cal.com" });
+  </script>
 </head>
 
 <body>
@@ -8759,45 +8775,13 @@
   <script
     data-framer-appear-animation="no-preference">(() => { function c(i, o, s) { if (window.__framer_disable_appear_effects_optimization__ || typeof animator > "u") return; let e = { detail: { bg: document.hidden } }; requestAnimationFrame(() => { let a = "framer-appear-start"; performance.mark(a, e), animator.animateAppearEffects(JSON.parse(window.__framer__appearAnimationsContent.text), (m, p, d) => { let t = document.querySelector(m); if (t) for (let [r, f] of Object.entries(p)) animator.startOptimizedAppearAnimation(t, r, f, d[r]) }, i, o, s && window.matchMedia("(prefers-reduced-motion:reduce)").matches === !0, animator.getActiveVariantHash(JSON.parse(window.__framer__breakpoints.text))); let n = "framer-appear-end"; performance.mark(n, e), performance.measure("framer-appear", { start: a, end: n, detail: e.detail }) }) } return c })()("data-framer-appear-id", "__Appear_Animation_Transform__", false)</script>
   <script>typeof document < "u" && (window.process = { ...window.process, env: { ...window.process?.env, NODE_ENV: "production" } });</script>
+  <!-- Disabling broken Framer JS preloads to fix console 404s
   <link rel="modulepreload" fetchpriority="low"
     href="https://framerusercontent.com/sites/5qIuReHsN7guGPCxKHrNFv/react.rcQKPiC1.mjs">
-  <link rel="modulepreload" fetchpriority="low"
-    href="https://framerusercontent.com/sites/5qIuReHsN7guGPCxKHrNFv/rolldown-runtime.C5V3rOZD.mjs">
-  <link rel="modulepreload" fetchpriority="low"
-    href="https://framerusercontent.com/sites/5qIuReHsN7guGPCxKHrNFv/motion.BEP4zV6S.mjs">
-  <link rel="modulepreload" fetchpriority="low"
-    href="https://framerusercontent.com/sites/5qIuReHsN7guGPCxKHrNFv/framer.T8E7on6i.mjs">
-  <link rel="modulepreload" fetchpriority="low"
-    href="https://framerusercontent.com/sites/5qIuReHsN7guGPCxKHrNFv/Feather.zY75T5wt.mjs">
-  <link rel="modulepreload" fetchpriority="low"
-    href="https://framerusercontent.com/sites/5qIuReHsN7guGPCxKHrNFv/shared-lib.CvC0LDS4.mjs">
-  <link rel="modulepreload" fetchpriority="low"
-    href="https://framerusercontent.com/sites/5qIuReHsN7guGPCxKHrNFv/nz2TAirYs.Bhc5TrP4.mjs">
-  <link rel="modulepreload" fetchpriority="low"
-    href="https://framerusercontent.com/sites/5qIuReHsN7guGPCxKHrNFv/AKsQHKXbb.mQe8j_H5.mjs">
-  <link rel="modulepreload" fetchpriority="low"
-    href="https://framerusercontent.com/sites/5qIuReHsN7guGPCxKHrNFv/Zy_xXe4qR.B2ixE9hY.mjs">
-  <link rel="modulepreload" fetchpriority="low"
-    href="https://framerusercontent.com/sites/5qIuReHsN7guGPCxKHrNFv/bGpW7sizi1-Duy_FsimgLxzR4Z1BTnIVYXjIUXrknYA.DvzIOGc3.mjs">
-  <link rel="modulepreload" fetchpriority="low"
-    href="https://framerusercontent.com/sites/5qIuReHsN7guGPCxKHrNFv/cZGkHQUUT.CmJ6U0jA.mjs">
-  <link rel="modulepreload" fetchpriority="low"
-    href="https://framerusercontent.com/sites/5qIuReHsN7guGPCxKHrNFv/dWmtdKCKV.C-1Xs_tX.mjs">
-  <link rel="modulepreload" fetchpriority="low"
-    href="https://framerusercontent.com/sites/5qIuReHsN7guGPCxKHrNFv/PSXvoriSq.Bi5Jm0b0.mjs">
-  <link rel="modulepreload" fetchpriority="low"
-    href="https://framerusercontent.com/sites/5qIuReHsN7guGPCxKHrNFv/W5wX2z6sd.DqcP2qiu.mjs">
-  <link rel="modulepreload" fetchpriority="low"
-    href="https://framerusercontent.com/sites/5qIuReHsN7guGPCxKHrNFv/x1oVpw1On.DkKV8ZgS.mjs">
-  <link rel="modulepreload" fetchpriority="low"
-    href="https://framerusercontent.com/sites/5qIuReHsN7guGPCxKHrNFv/hdoDoOWGj.CQIgt83n.mjs">
-  <link rel="modulepreload" fetchpriority="low"
-    href="https://framerusercontent.com/sites/5qIuReHsN7guGPCxKHrNFv/augiA20Il.lC9aUjgg.mjs">
-  <link rel="modulepreload" fetchpriority="low"
-    href="https://framerusercontent.com/sites/5qIuReHsN7guGPCxKHrNFv/J2PzBZFNV.RX8YQ_cc.mjs">
-  <link rel="modulepreload" fetchpriority="low" href="./assets/script_main.B8jA2kw1.mjs">
-  <script type="module" async="" data-framer-bundle="main" fetchpriority="low"
-    src="./assets/script_main.B8jA2kw1.mjs"></script>
+  ... [truncated preloads] ...
+  -->
+  <!-- <script type="module" async="" data-framer-bundle="main" fetchpriority="low"
+    src="./assets/script_main.B8jA2kw1.mjs"></script> -->
   <div id="svg-templates"
     style="position: absolute; overflow: hidden; bottom: 0; left: 0; width: 0; height: 0; z-index: 0; contain: strict"
     aria-hidden="true">
