@@ -11,6 +11,21 @@
   <!-- Start of headStart -->
 
   <!-- End of headStart -->
+  <script type="text/javascript">
+    (function (C, A, L) {
+      let p = function (a, ar) { a.q.push(ar); };
+      let d = C.document; C.Cal = C.Cal || function () {
+        let a = arguments; if (!a.length) return;
+        let r = a[0];
+        if (!C.Cal.q) C.Cal.q = [];
+        if (r === "init") {
+          let s = d.createElement("script");
+          s.src = A; d.head.appendChild(s); C.Cal.init = function () { p(C.Cal, arguments); };
+        } else p(C.Cal, arguments);
+      };
+    })(window, "https://app.cal.com/embed/embed.js", "Cal");
+    Cal("init", { origin: "https://app.cal.com" });
+  </script>
   <meta name="viewport" content="width=device-width">
   <meta name="generator" content="Framer 05a55d9">
   <title>Ventra – AI-Powered Client Acquisition</title>
@@ -4717,25 +4732,40 @@
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
-      padding: 0 32px !important;
-      height: 48px !important;
+      padding: 0 40px !important;
+      height: 52px !important;
       width: fit-content !important;
-      min-width: unset !important;
+      min-width: 180px !important;
       text-decoration: none !important;
       transition: all 0.2s ease-in-out !important;
+      border-radius: 12px !important;
+      position: relative !important;
+      overflow: visible !important;
     }
 
-    /* Force all nested elements to center the text perfectly */
-    .framer-8u5a6p *,
-    .framer-aOQEa *,
-    .framer-119jpu * {
+    /* Aggressively target inner containers and text to FORCE centering */
+    .framer-8u5a6p div,
+    .framer-aOQEa div,
+    .framer-119jpu div,
+    .framer-8u5a6p p,
+    .framer-aOQEa p,
+    .framer-119jpu p,
+    .framer-8u5a6p span,
+    .framer-aOQEa span,
+    .framer-119jpu span {
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
       width: 100% !important;
+      height: 100% !important;
       margin: 0 !important;
       padding: 0 !important;
       text-align: center !important;
+      white-space: nowrap !important;
+      background: transparent !important;
+      border: none !important;
+      transform: none !important;
+      opacity: 1 !important;
       flex-shrink: 0 !important;
     }
 
@@ -5120,21 +5150,16 @@
       }
     }
   </style>
-  <script type="text/javascript">
-    (function (C, A, L) {
-      let p = function (a, ar) { a.q.push(ar); };
-      let d = C.document; C.Cal = C.Cal || function () {
-        let a = arguments; if (!a.length) return;
-        let r = a[0];
-        if (!C.Cal.q) C.Cal.q = [];
-        if (r === "init") {
-          let s = d.createElement("script");
-          s.src = A; d.head.appendChild(s); C.Cal.init = function () { p(C.Cal, arguments); };
-        } else p(C.Cal, arguments);
-      };
-    })(window, "https://app.cal.com/embed/embed.js", "Cal");
-    Cal("init", { origin: "https://app.cal.com" });
-  </script>
+  <style>
+    /* Prevent horizontal scroll override */
+    html,
+    body {
+      overflow-x: hidden !important;
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  </style>
 </head>
 
 <body>
