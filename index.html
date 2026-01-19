@@ -4717,29 +4717,41 @@
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
-      padding: 14px 28px !important;
-      /* Standardized padding */
+      padding: 0 24px !important;
       height: 48px !important;
-      /* Standardized height */
-      min-width: 160px !important;
+      width: fit-content !important;
+      min-width: 140px !important;
       text-decoration: none !important;
       transition: all 0.2s ease-in-out !important;
     }
 
-    /* Fix for button inner text centering */
+    /* Fix for button inner text centering and positioning */
     .framer-8u5a6p>div,
     .framer-aOQEa>div,
-    .framer-119jpu>div {
+    .framer-119jpu>div,
+    .framer-8u5a6p p,
+    .framer-aOQEa p,
+    .framer-119jpu p {
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
-      width: 100% !important;
+      width: auto !important;
+      margin: 0 !important;
+      padding: 0 !important;
       text-align: center !important;
+      flex-shrink: 0 !important;
     }
 
-    /* Specific fix for the nav button to ensure it doesn't float weirdly */
+    /* Specific fix for the nav button placement */
     .framer-8u5a6p {
       margin-left: auto !important;
+    }
+
+    /* Ensure specific hero layout doesn't break buttons */
+    .framer-1wypiug {
+      display: flex !important;
+      gap: 16px !important;
+      width: fit-content !important;
     }
 
     /* CUSTOM RESPONSIVENESS OVERRIDES */
